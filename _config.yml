@@ -1,0 +1,4 @@
+markdown: redcarpet
+baseurl: /gnostyx
+
+exclude: ['ia', 'visual-styles','README.md']
