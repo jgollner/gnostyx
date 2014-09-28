@@ -1,0 +1,157 @@
+
+button {
+  width: 230px;
+  height: 50px;
+  background-color: #ccc;
+  border:none;
+  border-radius: 5px;
+  margin: 10px auto 0;
+  color: #fff;
+  font-size: 12pt;
+  font-weight: 100;
+  font-family: source sans pro, sans-serif;
+  text-align: center;
+  -webkit-animation-name: btnfade 1s;
+   border-style: none;
+  outline: none;
+}
+
+-@-webkit-keyframes btnfade {
+from {  background-color:#ccc; }
+to{ background-color: #fafafa; }
+}
+
+
+.projects-holder {
+margin: 90px auto 100px;  
+}
+
+
+button:focused,
+button:hover,
+button:during,  
+button:active {
+  border-style: none;
+  outline: none;
+
+ 
+}
+
+
+
+.btn1:hover {
+  background-color: #fafafa;
+  color: #666;
+  border: 1px solid #888;
+}
+
+
+
+
+
+
+
+#p-land-page p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 13pt;
+  font-weight: 200;
+  line-height: 1.3em;
+  color:#2a877d;
+  text-align: left;
+  padding-top: 10px;
+
+}
+#p-land-page h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 13pt;
+  font-weight: 200;
+  line-height: 1.3em;
+  color:#fff;
+  text-align: left;
+  padding-top: 20px;
+
+}
+
+
+
+
+.p-land-intro-btmbar {
+  width: 100%;
+  height: 80px;
+  background-color: #f9f9f9;
+  position: absolute;
+  float: left;
+  left: 0;
+  text-align: left;
+  top: 330px;
+
+}
+
+
+
+
+.bucket  {
+  background-color: #fafafa;
+  margin: 4% 3%;
+  height: 210px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 1px 1px 0px #ccc;
+  padding: 4%;
+  border-radius: 4px;
+  text-align: left;
+}
+
+
+
+
+
+.project-icon {
+  background-image: url(../images/project-icon.svg);
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  text-align: left;
+  top: 130px;
+  z-index: 100;
+  position: absolute;
+  margin: 0 auto;
+}
+
+
+
+#p-land-page h4 {
+  font-size: 15pt;
+  font-weight: 300;
+  color:#fff;
+}
+
+
+
+
+#p-land-page h1 {
+  font-size: 20pt;
+  font-weight: 300;
+  color:#999;
+}
+
+
+
+
+#p-land-page h2 {
+  font-size: 26pt;
+  font-weight: 300;
+  color:#fff;
+}
+
+
+#p-land-page b {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16pt;
+  font-weight: 300;
+  line-height: 1.3em;
+  color:#2a877d;
+ 
+  text-align: left;
+  text-transform: uppercase;
+
+}
