@@ -1,25 +1,26 @@
 
 button {
-  width: 230px;
+  width: 100%;
   height: 50px;
-  background-color: #ccc;
+  background-color: #f8f8f8;
   border:none;
-  border-radius: 5px;
-  margin: 5px auto 0;
+  border-radius: 0px;
+  margin: 25px auto 0;
   color: #888;
   font-size: 12pt;
   font-weight: 400;
   font-family: source sans pro, sans-serif;
   text-align: center;
+  border: 1px solid #ccc;
   
-   border-style: none;
-  outline: none;
+  display: inline-block;
+  
 }
 
 
 .projects-holder {
   width: 100%;
-margin: 90px auto 100px;  
+margin: 90px 0 100px 0;  
 padding: 0;
 }
 
@@ -33,7 +34,6 @@ button:active {
 
  
 }
-
 
 
 .btn1:hover {
@@ -99,11 +99,11 @@ button:active {
 
 .bucket  {
   background-color: #fff;
-  margin: 4% 1%;
-  height: 210px;
+  margin: 0% 2%;
+  height: 170px;
   border: 1px solid #e3e3e3;
  
-  padding: 4%;
+  padding: 2% 5%;
   border-radius: 0px;
   text-align: left;
 }
@@ -141,6 +141,7 @@ button:active {
   font-size: 20pt;
   font-weight: 300;
   color:#999;
+  margin-top: 10px;
 }
 
 
@@ -155,13 +156,15 @@ button:active {
 
 #p-land-page b {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16pt;
+  font-size: 42pt;
   font-weight: 300;
   line-height: 1.3em;
   color:#2a877d;
- 
+ float: left;
+ margin-right: 20px;
   text-align: left;
   text-transform: uppercase;
+  margin-top: -10px;
 
 }
 
@@ -194,11 +197,6 @@ button:active {
 
 
 
-.bucket {
-  margin: 2% 4%;
-}
-
-
 }
 
 
@@ -210,10 +208,6 @@ button:active {
 
 @media only screen and (min-width: 64em) {
 
-
-.bucket {
-  margin: 2% 4%;
-}
 
 
 }
