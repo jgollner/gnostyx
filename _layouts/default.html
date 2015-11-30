@@ -10,6 +10,7 @@
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/general.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/projects.css">
 	<link href="css/grid.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
@@ -26,21 +27,39 @@
 
 
 
+				<header id="ha-header" class="ha-header">
+					<div class="ha-header-perspective">
+			
+						<h1><div class="logo logo2"></div></h1>
 
-<!-- 
-		<header>
-			<div class="logo"></div>
-			<div class="menu">
-				
-			</div>
-		</header>
- -->
+								<nav>
+									<ul>
+										<li><a href="#" target="#">Home</a></li>
 
+										<li><a href="#">Products</a>
+											<!-- <ul>
+												<li><a href="#">Gnostyx Lab</a></li>
+												<li><a href="#">Gnostyx Wireframe</a></li>
+											</ul> -->
+										</li>
+											  
+										<li><a href="projects.html">Projects</a></li>
+										<li><a href="#">Contact</a></li>
+									</ul>
+								</nav>
+						
+					</div>
+				</header>
+
+
+			<section class="ha-waypoint" data-animate-down="ha-header-show" data-animate-up="ha-header-hide">
+			</section>
 			
 
 			<section id="landing"><div class="background"></div>
-				<div class="introtype"><h1>Engineering Content</h1>	
-					<div class="landing-content"><p>Make the most of applied content technologies</p></div>
+				<img src="images/logo.svg" class="land-logo">
+				<div class="introtype"><h1>Applied Content Technologies</h1>	
+					<div class="landing-content"><p>Make the most of your content</p></div>
 				</div>
 			</section>
 
@@ -198,11 +217,46 @@
 
 
 
+
+	<script src="js/waypoints2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cbpQTRotator.min.js"></script>
+	<script>
+			var $head = $( '#ha-header' );
+			$( '.ha-waypoint' ).each( function(i) {
+				var $el = $( this ),
+					animClassDown = $el.data( 'animateDown' ),
+					animClassUp = $el.data( 'animateUp' );
+
+				$el.waypoint( function( direction ) {
+					if( direction === 'down' && animClassDown ) {
+						$head.attr('class', 'ha-header ' + animClassDown);
+					}
+					else if( direction === 'up' && animClassUp ){
+						$head.attr('class', 'ha-header ' + animClassUp);
+					}
+				}, { offset: '-60%' } );
+			} );
+		</script>
+
+		<script>
+			$( function() {
+				$( '#cbp-qtrotator' ).cbpQTRotator();
+
+			} );
+		</script>
+
+
 			<script type="text/javascript" src="js/footer-toggle-hybrid.js"></script>
 			<script type="text/javascript" src="js/retina.min.js"></script>
 		
 			<script type="text/javascript" src="js/animation.js"></script>
 			<script type="text/javascript" src="js/waypoints.min.js"></script>
+
+
+			
+
+
+
 
 
 </body>
